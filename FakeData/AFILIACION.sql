@@ -1,0 +1,10 @@
+insert into AFILIACION (idCEDULA, nombreAfi, apePatAfi, apeMatAfi, cuotaMensual, tipo) values ('ewljx90575', 'Arabelle', 'McRinn', 'Farnin', 655.4, 'i');
+insert into AFILIACION (idCEDULA, nombreAfi, apePatAfi, apeMatAfi, cuotaMensual, tipo) values ('zdyky92503', 'Stillmann', 'Bleddon', 'Merring', 7135.87, 'g');
+insert into AFILIACION (idCEDULA, nombreAfi, apePatAfi, apeMatAfi, cuotaMensual, tipo) values ('iqjmx07077', 'Viviyan', 'Maskall', 'Sandeman', 3375.92, 'i');
+insert into AFILIACION (idCEDULA, nombreAfi, apePatAfi, apeMatAfi, cuotaMensual, tipo) values ('vvbbl32737', 'Winfred', 'Drivers', 'Sigsworth', 4989.42, 'i');
+insert into AFILIACION (idCEDULA, nombreAfi, apePatAfi, apeMatAfi, cuotaMensual, tipo) values ('wuyvz04265', 'Flo', 'Kollaschek', 'Tumber', 3933.04, 'i');
+insert into AFILIACION (idCEDULA, nombreAfi, apePatAfi, apeMatAfi, cuotaMensual, tipo) values ('jmcli99609', 'Rosabelle', 'Woolforde', 'Iacovielli', 5418.37, 'i');
+insert into AFILIACION (idCEDULA, nombreAfi, apePatAfi, apeMatAfi, cuotaMensual, tipo) values ('qrfwh90767', 'Lenee', 'Stronge', 'Ciccottini', 1959.36, 'i');
+insert into AFILIACION (idCEDULA, nombreAfi, apePatAfi, apeMatAfi, cuotaMensual, tipo) values ('laoou54763', 'Melinda', 'Sage', 'Hugonin', 4930.0, 'i');
+insert into AFILIACION (idCEDULA, nombreAfi, apePatAfi, apeMatAfi, cuotaMensual, tipo) values ('ctjna31096', 'Kelsey', 'Kubat', 'Penniell', 3897.75, 'i');
+insert into AFILIACION (idCEDULA, nombreAfi, apePatAfi, apeMatAfi, cuotaMensual, tipo) values ('beiyb71853', 'Warren', 'Naisby', 'Meese', 5964.17, 'i');
