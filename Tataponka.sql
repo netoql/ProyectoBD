@@ -40,3 +40,36 @@ FROM (SELECT T.idOdoTrat, TO_CHAR(T.fechaInicio, 'MM') AS MES, T.pagoTratamiento
                 FROM ODONTOLOGO_TRATAMIENTO) O
         ON T.idOdoTrat = O.idOdoTrat)
 GROUP BY nombreSuc, MES;
+
+--5-Realizar una función que realice el cálculo del costo del tratamiento de los afiliados grupales.
+CREATE OR REPLACE FUNCTION ftCOSTO(vTratamiento IN VARCHAR2, vNom IN VARCHAR2)
+RETURN NUMBER
+IS
+vMonto TRATAMIENTO.costoTratamiento%TYPE;
+vDesc GRUPAL.rebajaProcentaje%TYPE;
+BEGIN
+SELECT rebajaProcentaje INTO vDesc
+FROM GRUPAL
+WHERE nomConvenio=vNom;
+SELECT costoTratamiento INTO vMonto
+FROM TRATAMIENTO
+WHERE nombreTratamiento=vTratamiento;
+RETURN(vMonto-(vMonto*(vDesc/100)));
+END ftCOSTO;
+/
+
+SELECT ftCOSTO('Coronas','ConvenioXYZ') FROM DUAL;
+
+--7.-Muestre los nombres de los afiliados y todos los datos de los tratamientos que les fueron aplicados por sucursal.
+CREATE OR REPLACE VIEW vwDATOS_AFI_TRAT
+AS
+SELECT 
+    ot.nombreSuc, a.nombreAfi, a.apePatAfi, a.apeMatAfi, ot.cedulaOdont,ot.nombreTratamiento,t.costoTratamiento
+FROM 
+    AFILIACION a
+JOIN 
+    TRATAMIENTO_AFILIADO ta ON a.idCedula = ta.idCedula
+JOIN 
+    ODONTOLOGO_TRATAMIENTO ot ON ta.idOdoTrat = ot.idOdoTrat
+JOIN 
+    TRATAMIENTO t ON ot.nombreTratamiento = t.nombreTratamiento;
