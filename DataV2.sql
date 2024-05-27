@@ -20,6 +20,8 @@ INSERT INTO AFILIACION (idCedula, nombreAfi, apePatAfi, apeMatAfi, cuotaMensual,
 ('7788990011', 'Laura', 'Santos', 'Castro', 125.00, 'i');
 INSERT INTO AFILIACION (idCedula, nombreAfi, apePatAfi, apeMatAfi, cuotaMensual, tipo) VALUES 
 ('8899001122', 'Rafael', 'Guzman', 'Molina', 135.00, 'g');
+INSERT INTO AFILIACION (idCedula, nombreAfi, apePatAfi, apeMatAfi, cuotaMensual, tipo) VALUES 
+('0000000000', '000', '000', '000', 00.00, 'i');
 
 -- Insertar datos en INDIVIDUAL
 INSERT INTO INDIVIDUAL (idCedula) VALUES 
@@ -89,6 +91,7 @@ INSERT INTO HISTORIAL (idHist, idCedula) VALUES
 INSERT INTO HISTORIAL (idHist, idCedula) VALUES 
 ('HIST3242', '8899001122');
 INSERT INTO HISTORIAL (idHist, idCedula) VALUES 
+('0000000000','0000000000');
 
 -- Insertar datos en SUCURSAL
 INSERT INTO SUCURSAL (nombreSuc, ciudad, calle, numero) VALUES 
