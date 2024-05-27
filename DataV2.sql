@@ -92,69 +92,69 @@ INSERT INTO HISTORIAL (idHist, idCedula) VALUES
 
 -- Insertar datos en SUCURSAL
 INSERT INTO SUCURSAL (nombreSuc, ciudad, calle, numero) VALUES 
-('Sucursal1', 'Ciudad de México', 'Av. Insurgentes', 123);
+('Smart Dental', 'Ciudad de México', 'Av. Insurgentes', 123);
 INSERT INTO SUCURSAL (nombreSuc, ciudad, calle, numero) VALUES 
-('Sucursal2', 'Guadalajara', 'Calle Chapultepec', 456);
+('Smart Dental Sur', 'Guadalajara', 'Calle Chapultepec', 456);
 INSERT INTO SUCURSAL (nombreSuc, ciudad, calle, numero) VALUES 
-('Sucursal3', 'Monterrey', 'Av. Constitución', 789);
+('Smart Dental Norte', 'Monterrey', 'Av. Constitución', 789);
 INSERT INTO SUCURSAL (nombreSuc, ciudad, calle, numero) VALUES 
-('Sucursal4', 'Puebla', 'Blvd. 5 de Mayo', 101);
+('Smart Dental Poniente', 'Puebla', 'Blvd. 5 de Mayo', 101);
 INSERT INTO SUCURSAL (nombreSuc, ciudad, calle, numero) VALUES 
-('Sucursal5', 'Toluca', 'Av. Morelos', 202);
+('Smart Dental Noreste', 'Toluca', 'Av. Morelos', 202);
 INSERT INTO SUCURSAL (nombreSuc, ciudad, calle, numero) VALUES 
-('Sucursal6', 'Querétaro', 'Av. Zaragoza', 303);
+('Smart Dental Este', 'Querétaro', 'Av. Zaragoza', 303);
 INSERT INTO SUCURSAL (nombreSuc, ciudad, calle, numero) VALUES 
-('Sucursal7', 'Cancún', 'Blvd. Kukulkán', 404);
+('Smart Dental Oeste', 'Cancún', 'Blvd. Kukulkán', 404);
 INSERT INTO SUCURSAL (nombreSuc, ciudad, calle, numero) VALUES 
-('Sucursal8', 'Tijuana', 'Av. Revolución', 505);
+('Smart Dental Suroeste', 'Tijuana', 'Av. Revolución', 505);
 INSERT INTO SUCURSAL (nombreSuc, ciudad, calle, numero) VALUES 
-('Sucursal9', 'Mérida', 'Paseo de Montejo', 606);
+('Smart Dental Noroeste', 'Mérida', 'Paseo de Montejo', 606);
 INSERT INTO SUCURSAL (nombreSuc, ciudad, calle, numero) VALUES 
-('Sucursal10', 'Leon', 'Blvd. Adolfo Lopez Mateos',707);
+('Smart Dental Sureste', 'Leon', 'Blvd. Adolfo Lopez Mateos',707);
 
 -- Insertar datos en CONSULTORIO
 INSERT INTO CONSULTORIO (numConsultorio, nombreSuc) VALUES 
-(101, 'Sucursal1');
+(101, 'Smart Dental');
 INSERT INTO CONSULTORIO (numConsultorio, nombreSuc) VALUES 
-(102, 'Sucursal2');
+(102, 'Smart Dental Sur');
 INSERT INTO CONSULTORIO (numConsultorio, nombreSuc) VALUES 
-(103, 'Sucursal3');
+(103, 'Smart Dental Norte');
 INSERT INTO CONSULTORIO (numConsultorio, nombreSuc) VALUES 
-(104, 'Sucursal4');
+(104, 'Smart Dental Poniente');
 INSERT INTO CONSULTORIO (numConsultorio, nombreSuc) VALUES 
-(105, 'Sucursal5');
+(105, 'Smart Dental Noreste');
 INSERT INTO CONSULTORIO (numConsultorio, nombreSuc) VALUES 
-(106, 'Sucursal6');
+(106, 'Smart Dental Este');
 INSERT INTO CONSULTORIO (numConsultorio, nombreSuc) VALUES 
-(107, 'Sucursal7');
+(107, 'Smart Dental Oeste');
 INSERT INTO CONSULTORIO (numConsultorio, nombreSuc) VALUES 
-(108, 'Sucursal8');
+(108, 'Smart Dental Suroeste');
 INSERT INTO CONSULTORIO (numConsultorio, nombreSuc) VALUES 
-(109, 'Sucursal9');
+(109, 'Smart Dental Noroeste');
 INSERT INTO CONSULTORIO (numConsultorio, nombreSuc) VALUES 
-(110, 'Sucursal10');
+(110, 'Smart Dental Sureste');
 
 -- Insertar datos en EQUIPAMIENTO
 INSERT INTO EQUIPAMIENTO (numSerie, nombreEquip, fechaMantenimiento, numConsultorio, nombreSuc) VALUES 
-('EQUI123456', 'Equip1', TO_DATE('2024-01-15', 'YYYY-MM-DD'), 101, 'Sucursal1');
+('EQUI123456', 'Equip1', TO_DATE('2024-01-15', 'YYYY-MM-DD'), 101, 'Smart Dental');
 INSERT INTO EQUIPAMIENTO (numSerie, nombreEquip, fechaMantenimiento, numConsultorio, nombreSuc) VALUES 
-('EQUI654321', 'Equip2', TO_DATE('2024-02-20', 'YYYY-MM-DD'), 102, 'Sucursal2');
+('EQUI654321', 'Equip2', TO_DATE('2024-02-20', 'YYYY-MM-DD'), 102, 'Smart Dental Sur');
 INSERT INTO EQUIPAMIENTO (numSerie, nombreEquip, fechaMantenimiento, numConsultorio, nombreSuc) VALUES 
-('EQUI112233', 'Equip3', TO_DATE('2024-03-10', 'YYYY-MM-DD'), 103, 'Sucursal3');
+('EQUI112233', 'Equip3', TO_DATE('2024-03-10', 'YYYY-MM-DD'), 103, 'Smart Dental Norte');
 INSERT INTO EQUIPAMIENTO (numSerie, nombreEquip, fechaMantenimiento, numConsultorio, nombreSuc) VALUES 
-('EQUI334455', 'Equip4', TO_DATE('2024-04-05', 'YYYY-MM-DD'), 104, 'Sucursal4');
+('EQUI334455', 'Equip4', TO_DATE('2024-04-05', 'YYYY-MM-DD'), 104, 'Smart Dental Poniente');
 INSERT INTO EQUIPAMIENTO (numSerie, nombreEquip, fechaMantenimiento, numConsultorio, nombreSuc) VALUES 
-('EQUI556677', 'Equip5', TO_DATE('2024-05-15', 'YYYY-MM-DD'), 105, 'Sucursal5');
+('EQUI556677', 'Equip5', TO_DATE('2024-05-15', 'YYYY-MM-DD'), 105, 'Smart Dental Noreste');
 INSERT INTO EQUIPAMIENTO (numSerie, nombreEquip, fechaMantenimiento, numConsultorio, nombreSuc) VALUES 
-('EQUI778899', 'Equip6', TO_DATE('2024-06-25', 'YYYY-MM-DD'), 106, 'Sucursal6');
+('EQUI778899', 'Equip6', TO_DATE('2024-06-25', 'YYYY-MM-DD'), 106, 'Smart Dental Este');
 INSERT INTO EQUIPAMIENTO (numSerie, nombreEquip, fechaMantenimiento, numConsultorio, nombreSuc) VALUES 
-('EQUI990011', 'Equip7', TO_DATE('2024-07-15', 'YYYY-MM-DD'), 107, 'Sucursal7');
+('EQUI990011', 'Equip7', TO_DATE('2024-07-15', 'YYYY-MM-DD'), 107, 'Smart Dental Oeste');
 INSERT INTO EQUIPAMIENTO (numSerie, nombreEquip, fechaMantenimiento, numConsultorio, nombreSuc) VALUES 
-('EQUI112244', 'Equip8', TO_DATE('2024-08-20', 'YYYY-MM-DD'), 108, 'Sucursal8');
+('EQUI112244', 'Equip8', TO_DATE('2024-08-20', 'YYYY-MM-DD'), 108, 'Smart Dental Suroeste');
 INSERT INTO EQUIPAMIENTO (numSerie, nombreEquip, fechaMantenimiento, numConsultorio, nombreSuc) VALUES 
-('EQUI334466', 'Equip9', TO_DATE('2024-09-30', 'YYYY-MM-DD'), 109, 'Sucursal9');
+('EQUI334466', 'Equip9', TO_DATE('2024-09-30', 'YYYY-MM-DD'), 109, 'Smart Dental Noroeste');
 INSERT INTO EQUIPAMIENTO (numSerie, nombreEquip, fechaMantenimiento, numConsultorio, nombreSuc) VALUES 
-('EQUI556688', 'Equip10', TO_DATE('2024-10-10', 'YYYY-MM-DD'), 110, 'Sucursal10');
+('EQUI556688', 'Equip10', TO_DATE('2024-10-10', 'YYYY-MM-DD'), 110, 'Smart Dental Sureste');
 
 -- Insertar datos en ODONTOLOGO
 INSERT INTO ODONTOLOGO (cedulaOdont, nombreOdont, apPatOdont, apMatOdont, especialidad) VALUES 
@@ -181,71 +181,71 @@ INSERT INTO ODONTOLOGO (cedulaOdont, nombreOdont, apPatOdont, apMatOdont, especi
 -- Insertar datos en ODONTOLOGO_SUCURSAL
 
 INSERT INTO ODONTOLOGO_SUCURSAL (nombreSuc, cedulaOdont, horario) VALUES 
-('Sucursal1', 'ODONT12345', TO_DATE('2024-05-23 09:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+('Smart Dental', 'ODONT12345', TO_DATE('2024-05-23 09:00:00', 'YYYY-MM-DD HH24:MI:SS'));
 INSERT INTO ODONTOLOGO_SUCURSAL (nombreSuc, cedulaOdont, horario) VALUES 
-('Sucursal2', 'ODONT54321', TO_DATE('2024-05-23 10:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+('Smart Dental Sur', 'ODONT54321', TO_DATE('2024-05-23 10:00:00', 'YYYY-MM-DD HH24:MI:SS'));
 INSERT INTO ODONTOLOGO_SUCURSAL (nombreSuc, cedulaOdont, horario) VALUES 
-('Sucursal3', 'ODONT11223', TO_DATE('2024-05-23 11:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+('Smart Dental Norte', 'ODONT11223', TO_DATE('2024-05-23 11:00:00', 'YYYY-MM-DD HH24:MI:SS'));
 INSERT INTO ODONTOLOGO_SUCURSAL (nombreSuc, cedulaOdont, horario) VALUES 
-('Sucursal4', 'ODONT33445', TO_DATE('2024-05-23 12:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+('Smart Dental Poniente', 'ODONT33445', TO_DATE('2024-05-23 12:00:00', 'YYYY-MM-DD HH24:MI:SS'));
 INSERT INTO ODONTOLOGO_SUCURSAL (nombreSuc, cedulaOdont, horario) VALUES 
-('Sucursal5', 'ODONT55667', TO_DATE('2024-05-23 13:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+('Smart Dental Noreste', 'ODONT55667', TO_DATE('2024-05-23 13:00:00', 'YYYY-MM-DD HH24:MI:SS'));
 INSERT INTO ODONTOLOGO_SUCURSAL (nombreSuc, cedulaOdont, horario) VALUES 
-('Sucursal6', 'ODONT77889', TO_DATE('2024-05-23 14:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+('Smart Dental Este', 'ODONT77889', TO_DATE('2024-05-23 14:00:00', 'YYYY-MM-DD HH24:MI:SS'));
 INSERT INTO ODONTOLOGO_SUCURSAL (nombreSuc, cedulaOdont, horario) VALUES 
-('Sucursal7', 'ODONT99000', TO_DATE('2024-05-23 15:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+('Smart Dental Oeste', 'ODONT99000', TO_DATE('2024-05-23 15:00:00', 'YYYY-MM-DD HH24:MI:SS'));
 INSERT INTO ODONTOLOGO_SUCURSAL (nombreSuc, cedulaOdont, horario) VALUES 
-('Sucursal8', 'ODONT11122', TO_DATE('2024-05-23 16:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+('Smart Dental Suroeste', 'ODONT11122', TO_DATE('2024-05-23 16:00:00', 'YYYY-MM-DD HH24:MI:SS'));
 INSERT INTO ODONTOLOGO_SUCURSAL (nombreSuc, cedulaOdont, horario) VALUES 
-('Sucursal9', 'ODONT33344', TO_DATE('2024-05-23 17:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+('Smart Dental Noroeste', 'ODONT33344', TO_DATE('2024-05-23 17:00:00', 'YYYY-MM-DD HH24:MI:SS'));
 INSERT INTO ODONTOLOGO_SUCURSAL (nombreSuc, cedulaOdont, horario) VALUES 
-('Sucursal10', 'ODONT55566', TO_DATE('2024-05-23 18:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+('Smart Dental Sureste', 'ODONT55566', TO_DATE('2024-05-23 18:00:00', 'YYYY-MM-DD HH24:MI:SS'));
 
 -- Insertar datos en TRATAMIENTO
 
 INSERT INTO TRATAMIENTO (nombreTratamiento, costoTratamiento) VALUES 
-('Trat1', 500.00);
+('Limpieza dental', 500.00);
 INSERT INTO TRATAMIENTO (nombreTratamiento, costoTratamiento) VALUES 
-('Trat2', 750.00);
+('Resinas', 750.00);
 INSERT INTO TRATAMIENTO (nombreTratamiento, costoTratamiento) VALUES 
-('Trat3', 600.00);
+('Incrustaciones', 600.00);
 INSERT INTO TRATAMIENTO (nombreTratamiento, costoTratamiento) VALUES 
-('Trat4', 850.00);
+('Coronas', 850.00);
 INSERT INTO TRATAMIENTO (nombreTratamiento, costoTratamiento) VALUES 
-('Trat5', 700.00);
+('Protesis', 700.00);
 INSERT INTO TRATAMIENTO (nombreTratamiento, costoTratamiento) VALUES 
-('Trat6', 900.00);
+('Endodoncia', 900.00);
 INSERT INTO TRATAMIENTO (nombreTratamiento, costoTratamiento) VALUES 
-('Trat7', 650.00);
+('Ortodoncia', 650.00);
 INSERT INTO TRATAMIENTO (nombreTratamiento, costoTratamiento) VALUES 
-('Trat8', 950.00);
+('Blanqueamiento dental', 950.00);
 INSERT INTO TRATAMIENTO (nombreTratamiento, costoTratamiento) VALUES 
-('Trat9', 800.00);
+('Carillas', 800.00);
 INSERT INTO TRATAMIENTO (nombreTratamiento, costoTratamiento) VALUES 
-('Trat10', 1000.00);
+('Cirugía bucal', 1000.00);
 
 -- Insertar datos en ODONTOLOGO_TRATAMIENTO
 
 INSERT INTO ODONTOLOGO_TRATAMIENTO (idOdoTrat, cedulaOdont, nombreTratamiento) VALUES 
-(1, 'ODONT12345', 'Trat1');
+(1, 'ODONT12345', 'Limpieza dental');
 INSERT INTO ODONTOLOGO_TRATAMIENTO (idOdoTrat, cedulaOdont, nombreTratamiento) VALUES 
-(2, 'ODONT54321', 'Trat2');
+(2, 'ODONT54321', 'Resinas');
 INSERT INTO ODONTOLOGO_TRATAMIENTO (idOdoTrat, cedulaOdont, nombreTratamiento) VALUES 
-(3, 'ODONT11223', 'Trat3');
+(3, 'ODONT11223', 'Incrustaciones');
 INSERT INTO ODONTOLOGO_TRATAMIENTO (idOdoTrat, cedulaOdont, nombreTratamiento) VALUES 
-(4, 'ODONT33445', 'Trat4');
+(4, 'ODONT33445', 'Coronas');
 INSERT INTO ODONTOLOGO_TRATAMIENTO (idOdoTrat, cedulaOdont, nombreTratamiento) VALUES 
-(5, 'ODONT55667', 'Trat5');
+(5, 'ODONT55667', 'Protesis');
 INSERT INTO ODONTOLOGO_TRATAMIENTO (idOdoTrat, cedulaOdont, nombreTratamiento) VALUES 
-(6, 'ODONT77889', 'Trat6');
+(6, 'ODONT77889', 'Endodoncia');
 INSERT INTO ODONTOLOGO_TRATAMIENTO (idOdoTrat, cedulaOdont, nombreTratamiento) VALUES 
-(7, 'ODONT99000', 'Trat7');
+(7, 'ODONT99000', 'Ortodoncia');
 INSERT INTO ODONTOLOGO_TRATAMIENTO (idOdoTrat, cedulaOdont, nombreTratamiento) VALUES 
-(8, 'ODONT11122', 'Trat8');
+(8, 'ODONT11122', 'Blanqueamiento dental');
 INSERT INTO ODONTOLOGO_TRATAMIENTO (idOdoTrat, cedulaOdont, nombreTratamiento) VALUES 
-(9, 'ODONT33344', 'Trat9');
+(9, 'ODONT33344', 'Carillas');
 INSERT INTO ODONTOLOGO_TRATAMIENTO (idOdoTrat, cedulaOdont, nombreTratamiento) VALUES 
-(10, 'ODONT55566', 'Trat10');
+(10, 'ODONT55566', 'Cirugía bucal');
 
 -- Insertar datos en TRATAMIENTO_AFILIADO
 INSERT INTO TRATAMIENTO_AFILIADO (idCedula, idOdoTrat, fechaInicio, finalizado, pagoTratamiento, idHist) VALUES 
@@ -271,54 +271,54 @@ INSERT INTO TRATAMIENTO_AFILIADO (idCedula, idOdoTrat, fechaInicio, finalizado, 
 
 -- Insertar datos en TRATAMIENTO_SUCURSAL
 INSERT INTO TRATAMIENTO_SUCURSAL(nombreTratamiento,nombreSuc) VALUES
-('Trat1','Sucursal1');
+('Limpieza dental','Smart Dental');
 INSERT INTO TRATAMIENTO_SUCURSAL(nombreTratamiento,nombreSuc) VALUES
-('Trat2','Sucursal1');
+('Resinas','Smart Dental');
 INSERT INTO TRATAMIENTO_SUCURSAL(nombreTratamiento,nombreSuc) VALUES
-('Trat3','Sucursal1');
+('Incrustaciones','Smart Dental');
 INSERT INTO TRATAMIENTO_SUCURSAL(nombreTratamiento,nombreSuc) VALUES
-('Trat1','Sucursal2');
+('Limpieza dental','Smart Dental Sur');
 INSERT INTO TRATAMIENTO_SUCURSAL(nombreTratamiento,nombreSuc) VALUES
-('Trat2','Sucursal2');
+('Resinas','Smart Dental Sur');
 INSERT INTO TRATAMIENTO_SUCURSAL(nombreTratamiento,nombreSuc) VALUES
-('Trat3','Sucursal2');
+('Incrustaciones','Smart Dental Sur');
 INSERT INTO TRATAMIENTO_SUCURSAL(nombreTratamiento,nombreSuc) VALUES
-('Trat1','Sucursal3');
+('Limpieza dental','Smart Dental Norte');
 INSERT INTO TRATAMIENTO_SUCURSAL(nombreTratamiento,nombreSuc) VALUES
-('Trat2','Sucursal3');
+('Resinas','Smart Dental Norte');
 INSERT INTO TRATAMIENTO_SUCURSAL(nombreTratamiento,nombreSuc) VALUES
-('Trat3','Sucursal3');
+('Incrustaciones','Smart Dental Norte');
 INSERT INTO TRATAMIENTO_SUCURSAL(nombreTratamiento,nombreSuc) VALUES
-('Trat1','Sucursal4');
+('Limpieza dental','Smart Dental Poniente');
 INSERT INTO TRATAMIENTO_SUCURSAL(nombreTratamiento,nombreSuc) VALUES
-('Trat5','Sucursal5');
+('Protesis','Smart Dental Noreste');
 INSERT INTO TRATAMIENTO_SUCURSAL(nombreTratamiento,nombreSuc) VALUES
-('Trat6','Sucursal6');
+('Endodoncia','Smart Dental Este');
 INSERT INTO TRATAMIENTO_SUCURSAL(nombreTratamiento,nombreSuc) VALUES
-('Trat10','Sucursal7');
+('Cirugía bucal','Smart Dental Oeste');
 INSERT INTO TRATAMIENTO_SUCURSAL(nombreTratamiento,nombreSuc) VALUES
-('Trat7','Sucursal8');
+('Ortodoncia','Smart Dental Suroeste');
 INSERT INTO TRATAMIENTO_SUCURSAL(nombreTratamiento,nombreSuc) VALUES
-('Trat3','Sucursal9');
+('Incrustaciones','Smart Dental Noroeste');
 
 -- Insertar datos en CITA
 INSERT INTO CITA (idCita, idHist, idCedula, nombreSuc, cedulaOdont, fechaCita, numConsultorio, finalizadoCita) VALUES 
-(1, 'HIST1234', '1234567890', 'Sucursal1', 'ODONT12345', TO_DATE('2024-05-10', 'YYYY-MM-DD'), 101, 'n');
+(1, 'HIST1234', '1234567890', 'Smart Dental', 'ODONT12345', TO_DATE('2024-05-10', 'YYYY-MM-DD'), 101, 'n');
 INSERT INTO CITA (idCita, idHist, idCedula, nombreSuc, cedulaOdont, fechaCita, numConsultorio, finalizadoCita) VALUES 
-(2, 'HIST5678', '0987654321', 'Sucursal2', 'ODONT54321', TO_DATE('2024-05-12', 'YYYY-MM-DD'), 102, 's');
+(2, 'HIST5678', '0987654321', 'Smart Dental Sur', 'ODONT54321', TO_DATE('2024-05-12', 'YYYY-MM-DD'), 102, 's');
 INSERT INTO CITA (idCita, idHist, idCedula, nombreSuc, cedulaOdont, fechaCita, numConsultorio, finalizadoCita) VALUES 
-(3, 'HIST9101', '1122334455', 'Sucursal3', 'ODONT11223', TO_DATE('2024-05-14', 'YYYY-MM-DD'), 103, 'n');
+(3, 'HIST9101', '1122334455', 'Smart Dental Norte', 'ODONT11223', TO_DATE('2024-05-14', 'YYYY-MM-DD'), 103, 'n');
 INSERT INTO CITA (idCita, idHist, idCedula, nombreSuc, cedulaOdont, fechaCita, numConsultorio, finalizadoCita) VALUES 
-(4, 'HIST1121', '2233445566', 'Sucursal4', 'ODONT33445', TO_DATE('2024-05-16', 'YYYY-MM-DD'), 104, 's');
+(4, 'HIST1121', '2233445566', 'Smart Dental Poniente', 'ODONT33445', TO_DATE('2024-05-16', 'YYYY-MM-DD'), 104, 's');
 INSERT INTO CITA (idCita, idHist, idCedula, nombreSuc, cedulaOdont, fechaCita, numConsultorio, finalizadoCita) VALUES 
-(5, 'HIST3141', '3344556677', 'Sucursal5', 'ODONT55667', TO_DATE('2024-05-18', 'YYYY-MM-DD'), 105, 'n');
+(5, 'HIST3141', '3344556677', 'Smart Dental Noreste', 'ODONT55667', TO_DATE('2024-05-18', 'YYYY-MM-DD'), 105, 'n');
 INSERT INTO CITA (idCita, idHist, idCedula, nombreSuc, cedulaOdont, fechaCita, numConsultorio, finalizadoCita) VALUES 
-(6, 'HIST5161', '4455667788', 'Sucursal6', 'ODONT77889', TO_DATE('2024-05-20', 'YYYY-MM-DD'), 106, 's');
+(6, 'HIST5161', '4455667788', 'Smart Dental Este', 'ODONT77889', TO_DATE('2024-05-20', 'YYYY-MM-DD'), 106, 's');
 INSERT INTO CITA (idCita, idHist, idCedula, nombreSuc, cedulaOdont, fechaCita, numConsultorio, finalizadoCita) VALUES 
-(7, 'HIST7181', '5566778899', 'Sucursal7', 'ODONT99000', TO_DATE('2024-05-22', 'YYYY-MM-DD'), 107, 'n');
+(7, 'HIST7181', '5566778899', 'Smart Dental Oeste', 'ODONT99000', TO_DATE('2024-05-22', 'YYYY-MM-DD'), 107, 'n');
 INSERT INTO CITA (idCita, idHist, idCedula, nombreSuc, cedulaOdont, fechaCita, numConsultorio, finalizadoCita) VALUES 
-(8, 'HIST9201', '6677889900', 'Sucursal8', 'ODONT11122', TO_DATE('2024-05-24', 'YYYY-MM-DD'), 108, 's');
+(8, 'HIST9201', '6677889900', 'Smart Dental Suroeste', 'ODONT11122', TO_DATE('2024-05-24', 'YYYY-MM-DD'), 108, 's');
 INSERT INTO CITA (idCita, idHist, idCedula, nombreSuc, cedulaOdont, fechaCita, numConsultorio, finalizadoCita) VALUES 
-(9, 'HIST1222', '7788990011', 'Sucursal9', 'ODONT33344', TO_DATE('2024-05-26', 'YYYY-MM-DD'), 109, 'n');
+(9, 'HIST1222', '7788990011', 'Smart Dental Noroeste', 'ODONT33344', TO_DATE('2024-05-26', 'YYYY-MM-DD'), 109, 'n');
 INSERT INTO CITA (idCita, idHist, idCedula, nombreSuc, cedulaOdont, fechaCita, numConsultorio, finalizadoCita) VALUES 
-(10, 'HIST3242', '8899001122', 'Sucursal10', 'ODONT55566', TO_DATE('2024-05-28', 'YYYY-MM-DD'),110,'s');
+(10, 'HIST3242', '8899001122', 'Smart Dental Sureste', 'ODONT55566', TO_DATE('2024-05-28', 'YYYY-MM-DD'),110,'s');
