@@ -110,7 +110,7 @@ INSERT INTO SUCURSAL (nombreSuc, ciudad, calle, numero) VALUES
 INSERT INTO SUCURSAL (nombreSuc, ciudad, calle, numero) VALUES 
 ('Sucursal9', 'Mérida', 'Paseo de Montejo', 606);
 INSERT INTO SUCURSAL (nombreSuc, ciudad, calle, numero) VALUES 
-('Sucursal10', 'León', 'Blvd. Adolfo López Mateos',707);
+('Sucursal10', 'Leon', 'Blvd. Adolfo Lopez Mateos',707);
 
 -- Insertar datos en CONSULTORIO
 INSERT INTO CONSULTORIO (numConsultorio, nombreSuc) VALUES 
@@ -136,25 +136,25 @@ INSERT INTO CONSULTORIO (numConsultorio, nombreSuc) VALUES
 
 -- Insertar datos en EQUIPAMIENTO
 INSERT INTO EQUIPAMIENTO (numSerie, nombreEquip, fechaMantenimiento, numConsultorio, nombreSuc) VALUES 
-('EQUI123456', 'Equip1', TO_DATE('2024-01-15', 'YYYY-MM-DD'); 101, 'Sucursal1');
+('EQUI123456', 'Equip1', TO_DATE('2024-01-15', 'YYYY-MM-DD'), 101, 'Sucursal1');
 INSERT INTO EQUIPAMIENTO (numSerie, nombreEquip, fechaMantenimiento, numConsultorio, nombreSuc) VALUES 
-('EQUI654321', 'Equip2', TO_DATE('2024-02-20', 'YYYY-MM-DD'); 102, 'Sucursal2');
+('EQUI654321', 'Equip2', TO_DATE('2024-02-20', 'YYYY-MM-DD'), 102, 'Sucursal2');
 INSERT INTO EQUIPAMIENTO (numSerie, nombreEquip, fechaMantenimiento, numConsultorio, nombreSuc) VALUES 
-('EQUI112233', 'Equip3', TO_DATE('2024-03-10', 'YYYY-MM-DD'); 103, 'Sucursal3');
+('EQUI112233', 'Equip3', TO_DATE('2024-03-10', 'YYYY-MM-DD'), 103, 'Sucursal3');
 INSERT INTO EQUIPAMIENTO (numSerie, nombreEquip, fechaMantenimiento, numConsultorio, nombreSuc) VALUES 
-('EQUI334455', 'Equip4', TO_DATE('2024-04-05', 'YYYY-MM-DD'); 104, 'Sucursal4');
+('EQUI334455', 'Equip4', TO_DATE('2024-04-05', 'YYYY-MM-DD'), 104, 'Sucursal4');
 INSERT INTO EQUIPAMIENTO (numSerie, nombreEquip, fechaMantenimiento, numConsultorio, nombreSuc) VALUES 
-('EQUI556677', 'Equip5', TO_DATE('2024-05-15', 'YYYY-MM-DD'); 105, 'Sucursal5');
+('EQUI556677', 'Equip5', TO_DATE('2024-05-15', 'YYYY-MM-DD'), 105, 'Sucursal5');
 INSERT INTO EQUIPAMIENTO (numSerie, nombreEquip, fechaMantenimiento, numConsultorio, nombreSuc) VALUES 
-('EQUI778899', 'Equip6', TO_DATE('2024-06-25', 'YYYY-MM-DD'); 106, 'Sucursal6');
+('EQUI778899', 'Equip6', TO_DATE('2024-06-25', 'YYYY-MM-DD'), 106, 'Sucursal6');
 INSERT INTO EQUIPAMIENTO (numSerie, nombreEquip, fechaMantenimiento, numConsultorio, nombreSuc) VALUES 
-('EQUI990011', 'Equip7', TO_DATE('2024-07-15', 'YYYY-MM-DD'); 107, 'Sucursal7');
+('EQUI990011', 'Equip7', TO_DATE('2024-07-15', 'YYYY-MM-DD'), 107, 'Sucursal7');
 INSERT INTO EQUIPAMIENTO (numSerie, nombreEquip, fechaMantenimiento, numConsultorio, nombreSuc) VALUES 
-('EQUI112244', 'Equip8', TO_DATE('2024-08-20', 'YYYY-MM-DD'); 108, 'Sucursal8');
+('EQUI112244', 'Equip8', TO_DATE('2024-08-20', 'YYYY-MM-DD'), 108, 'Sucursal8');
 INSERT INTO EQUIPAMIENTO (numSerie, nombreEquip, fechaMantenimiento, numConsultorio, nombreSuc) VALUES 
-('EQUI334466', 'Equip9', TO_DATE('2024-09-30', 'YYYY-MM-DD'); 109, 'Sucursal9');
+('EQUI334466', 'Equip9', TO_DATE('2024-09-30', 'YYYY-MM-DD'), 109, 'Sucursal9');
 INSERT INTO EQUIPAMIENTO (numSerie, nombreEquip, fechaMantenimiento, numConsultorio, nombreSuc) VALUES 
-('EQUI556688', 'Equip10', TO_DATE('2024-10-10', 'YYYY-MM-DD'); 110, 'Sucursal10');
+('EQUI556688', 'Equip10', TO_DATE('2024-10-10', 'YYYY-MM-DD'), 110, 'Sucursal10');
 
 -- Insertar datos en ODONTOLOGO
 INSERT INTO ODONTOLOGO (cedulaOdont, nombreOdont, apPatOdont, apMatOdont, especialidad) VALUES 
