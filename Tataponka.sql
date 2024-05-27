@@ -1,3 +1,5 @@
+
+--1-
 CREATE OR REPLACE TRIGGER HIST_REG
 BEFORE INSERT ON TRATAMIENTO_AFILIADO
 FOR EACH ROW
@@ -26,3 +28,15 @@ select * from TRATAMIENTO_AFILIADO;
 DELETE FROM TRATAMIENTO_AFILIADO WHERE IDHIST='0000000000';
 ------------------------------------------------------------------------------------------------------
 */
+--10.-Obtenga el monto mensual obtenido de los tratamientos realizados por sucursal.
+CREATE OR REPLACE VIEW vwMONTOSUC
+AS
+SELECT nombreSuc, MES, SUM(PAGO) AS MONTO
+FROM (SELECT T.idOdoTrat, TO_CHAR(T.fechaInicio, 'MM') AS MES, T.pagoTratamiento AS PAGO, O.nombreSuc
+        FROM (SELECT idOdoTrat, fechaInicio, pagoTratamiento 
+                FROM TRATAMIENTO_AFILIADO) T
+        JOIN 
+            (SELECT idOdoTrat, nombreSuc 
+                FROM ODONTOLOGO_TRATAMIENTO) O
+        ON T.idOdoTrat = O.idOdoTrat)
+GROUP BY nombreSuc, MES;
