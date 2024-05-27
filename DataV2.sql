@@ -269,6 +269,38 @@ INSERT INTO TRATAMIENTO_AFILIADO (idCedula, idOdoTrat, fechaInicio, finalizado, 
 INSERT INTO TRATAMIENTO_AFILIADO (idCedula, idOdoTrat, fechaInicio, finalizado, pagoTratamiento, idHist) VALUES 
 ('8899001122', 10, TO_DATE('2024-06-10', 'YYYY-MM-DD'), 's', 1000.00, 'HIST3242');
 
+-- Insertar datos en TRATAMIENTO_SUCURSAL
+INSERT INTO TRATAMIENTO_SUCURSAL(nombreTratamiento,nombreSuc) VALUES
+('Trat1','Sucursal1');
+INSERT INTO TRATAMIENTO_SUCURSAL(nombreTratamiento,nombreSuc) VALUES
+('Trat2','Sucursal1');
+INSERT INTO TRATAMIENTO_SUCURSAL(nombreTratamiento,nombreSuc) VALUES
+('Trat3','Sucursal1');
+INSERT INTO TRATAMIENTO_SUCURSAL(nombreTratamiento,nombreSuc) VALUES
+('Trat1','Sucursal2');
+INSERT INTO TRATAMIENTO_SUCURSAL(nombreTratamiento,nombreSuc) VALUES
+('Trat2','Sucursal2');
+INSERT INTO TRATAMIENTO_SUCURSAL(nombreTratamiento,nombreSuc) VALUES
+('Trat3','Sucursal2');
+INSERT INTO TRATAMIENTO_SUCURSAL(nombreTratamiento,nombreSuc) VALUES
+('Trat1','Sucursal3');
+INSERT INTO TRATAMIENTO_SUCURSAL(nombreTratamiento,nombreSuc) VALUES
+('Trat2','Sucursal3');
+INSERT INTO TRATAMIENTO_SUCURSAL(nombreTratamiento,nombreSuc) VALUES
+('Trat3','Sucursal3');
+INSERT INTO TRATAMIENTO_SUCURSAL(nombreTratamiento,nombreSuc) VALUES
+('Trat1','Sucursal4');
+INSERT INTO TRATAMIENTO_SUCURSAL(nombreTratamiento,nombreSuc) VALUES
+('Trat5','Sucursal5');
+INSERT INTO TRATAMIENTO_SUCURSAL(nombreTratamiento,nombreSuc) VALUES
+('Trat6','Sucursal6');
+INSERT INTO TRATAMIENTO_SUCURSAL(nombreTratamiento,nombreSuc) VALUES
+('Trat10','Sucursal7');
+INSERT INTO TRATAMIENTO_SUCURSAL(nombreTratamiento,nombreSuc) VALUES
+('Trat7','Sucursal8');
+INSERT INTO TRATAMIENTO_SUCURSAL(nombreTratamiento,nombreSuc) VALUES
+('Trat3','Sucursal9');
+
 -- Insertar datos en CITA
 INSERT INTO CITA (idCita, idHist, idCedula, nombreSuc, cedulaOdont, fechaCita, numConsultorio, finalizadoCita) VALUES 
 (1, 'HIST1234', '1234567890', 'Sucursal1', 'ODONT12345', TO_DATE('2024-05-10', 'YYYY-MM-DD'), 101, 'n');
